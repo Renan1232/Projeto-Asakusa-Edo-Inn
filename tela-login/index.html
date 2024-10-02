@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Asakusa Edo Inn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container"></div>
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <div class="logo-div">
+                <a href="../index.html"><img class="logoAsakusa" src="img/logoasakusa.png" alt="Logo Asakusa"></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../tela-login/index.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div>
+        <img class="logo" src="logo.png" alt="logo png">
+    </div> -->
+
+    <form class="login">
+        <h1>Login</h1>
+        <label for="Email"></label>
+        <input type="text" id="Email" name="Email" placeholder="Email" required>
+        <label for="senha"></label>
+        <input type="password" id="Senha" name="Senha" placeholder="Senha" required>
+        <div class="botoes">
+            <button type="submit">Logar</button>
+            <a href="../tela-cadastro/index.html"><button type="button">Cadastrar</button></a>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <a class="rede" target="_blank" href="instagram.com"><img src="img/insta.png" alt="instagram logo"></a>
+        <a class="rede" target="_blank" href="facebook.com"><img src="img/fb.png" alt="facebook logo"></a>
+        <a class="rede" target="_blank" href="whatsapp.com"><img src="img/whats.png" alt="whatsapp logo"></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

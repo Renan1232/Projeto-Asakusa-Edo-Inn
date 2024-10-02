@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Asakusa Edo Inn">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logoasakusa.png" type="image/x-icon">
+    <title>Asakusa Edo Inn</title>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="full-width-container">
+        <header>
+            <div class="topnav" id="myTopnav">
+                <div class="logo-div">
+                    <a href="index.html">
+                        <img class="logoAsakusa" src="img/logoasakusa.png" alt="Logo Asakusa">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="tela-login/index.html">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="w3-content w3-display-container">
+                <!-- Slides individuais -->
+                <div class="mySlides">
+                    <img src="img/Hall.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="img/Quarto1.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="img/Quarto2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="img/Quarto3.png" style="width:100%">
+                </div>
+
+                <!-- Indicadores e controles do slideshow -->
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <!-- Botão para slide anterior -->
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <!-- Botão para próximo slide -->
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <!-- Indicadores de slide -->
+                    <div class="bolinhas">
+                        <span class="w3-badge demo w3-border  w3-hover-white" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo w3-border  w3-hover-white" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo w3-border  w3-hover-white" onclick="currentDiv(3)"></span>
+                        <span class="w3-badge demo w3-border  w3-hover-white" onclick="currentDiv(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/carrossel.js"></script>
+
+        </div>
+
+        <!-- INFORMACOES INFO1 -->
+        <div id="info1bgVermelha">
+            <div id="info1">
+                <img class="infoFoto1" src="img/i-hotel.png" alt="imagem do hotel estilo oriental">
+
+                <img class="molduraVertical" src="img/molduraVertical.png" alt="fundo imagem de moldura tema oriental">
+
+                <img class="molduraHorizontal" src="img/molduraHorizontal.png"
+                    alt="fundo imagem de moldura tema oriental">
+
+                <div class="text-overlay">
+                    <p>Bem-vindo ao Asakusa Edo, onde a tradição japonesa ganha vida! Experimente apresentações
+                        exclusivas de cerâmica de Arita e origami, mergulhe na rica cultura local e aproveite uma
+                        estadia que une conforto moderno e charme histórico. Descubra o verdadeiro espírito do Japão no
+                        coração de Asakusa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- FIM INFORMACOES INFO1 -->
+
+        <!-- INFORMACOES INFO2 -->
+
+        <div id="info2" class="container">
+            <img class="iLinha1" src="img/i-caligrafia.png" alt="imagem com escrita em caligrafia japonesa">
+
+            <img class="moldHori" src="img/molduraHorizontal.png" alt="fundo imagem de moldura tema oriental">
+
+            <p>Descubra a arte de aprender kanji enquanto se hospeda conosco! Em nosso hotel, oferecemos aulas de kanji
+                interativas e envolventes como parte de nossas atividades exclusivas. Mergulhe na riqueza cultural do
+                Japão e transforme sua estadia em uma experiência enriquecedora e inesquecível.</p>
+        </div>
+        <!-- FIM INFORMACOES INFO2 -->
+
+        <div id="info3" class="container">
+
+            <img class="moldHori" src="img/molduraHorizontal.png" alt="fundo imagem de moldura tema oriental">
+
+            <p>Desfrute de apresentações exclusivas de peças típicas japonesas em nosso hotel, incluindo cerâmica de
+                Arita e arte do origami. Uma experiência cultural inesquecível que enriquece sua estadia!</p>
+
+            <img class="iLinha1" src="img/i-teatro.png" alt="imagem teatro japonesa">
+        </div>
+
+        <div id="sobre" class="container">
+            <h1>SOBRE NÓS</h1>
+            <p>
+                No Asakusa Edo, oferecemos uma experiência única que celebra a rica herança cultural do Japão.
+                Localizado no vibrante bairro de Asakusa, nosso hotel combina o conforto moderno com o charme histórico,
+                proporcionando uma estadia memorável e imersiva.
+                Nosso compromisso é destacar as tradições japonesas através de atividades exclusivas, como apresentações
+                de cerâmica de Arita e sessões de origami, criando uma conexão genuína com a cultura local. Com um
+                atendimento atencioso e ambientes elegantemente decorados, o Asakusa Edo é o lugar perfeito para
+                explorar e desfrutar do espírito autêntico do Japão.
+            </p>
+
+        </div>
+
+        <div id="checkin" class="container">
+
+            <img class="moldHori2" src="img/molduraHorizontal.png" alt="fundo imagem de moldura tema oriental">
+
+            <h1>CHECK-IN</h1>
+            <p>Faça sua reserva hoje e experimente a combinação perfeita de tradição e conforto!</p>
+
+            <button>CHECK-IN</button>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com"><img src="img/logoInsta.png" alt="instagram logo"></a>
+            <a href="https://www.facebook.com"><img src="img/logoFB.png" alt="facebook logo"></a>
+            <a href="http://www.whatsapp.com"><img src="img/logoWhats.png" alt="whatsapp logo"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

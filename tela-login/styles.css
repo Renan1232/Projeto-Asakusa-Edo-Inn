@@ -1,0 +1,280 @@
+/*Paleta de Cores*/
+:root {
+    --corbkground: #F2B474;
+    /* background*/
+    --cornavborda: #B22222;
+    /* navbar - borda*/
+    --cormenu: #F2DAAE;
+    /* menu */
+    --cortexto: #000000;
+    /* conteúdo */
+    --cortexto2: #FFFFFF;
+    /* conteúdo footer*/
+}
+
+@font-face {
+    font-family: "edosz";
+    src: url(fonts/edosz.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2b474;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.login {
+    background-image: url(fundo.png);
+    background-size: 806px, 530px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 806px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.login h1 {
+    font-family: "edosz";
+    font-size: 36px;
+    color: black;
+}
+
+.login input {
+    background-color: #d9d9d9;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    color: black;
+    border: solid 1px black;
+    border-radius: 27px;
+    height: 75px;
+    width: 577px;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.login input::placeholder {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 130px;
+    margin-top: 50px;
+}
+
+button {
+    background-color: black;
+    border: #b22222 6px solid;
+    color: white;
+    font-size: 20px;
+    border-radius: 27px;
+    height: 75px;
+    width: 225px;
+    font-family: "edosz";
+    font-weight: 200;
+    /* margin-top: 50px; */
+
+}
+
+button:hover {
+    background-color: var(--cornavborda);
+}
+
+.footer {
+    background-color: #b22222;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+.footer img {
+    width: 70px;
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    font-family: edosz, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--cornavborda);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.topnav a {
+    display: block;
+    color: var(--cortexto);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.topnav a:hover {
+    color: var(--cormenu);
+}
+
+
+.logoAsakusa {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links a {
+    text-align: center;
+    padding: 14px, 16px;
+}
+
+#icon {
+    display: none;
+    /*icon menu hamburger*/
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-div {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #icon {
+        order: 2;
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 22px;
+        color: var(--cortexto);
+    }
+
+    .nav-links {
+        order: 3;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    .container {
+        width: 80%;
+    }
+
+
+
+    footer {
+        /* margin-top: auto; */
+        padding: 20px;
+
+
+    }
+
+    footer .socialMedia img {
+        width: 40px;
+        /* height: auto; */
+        margin: 0 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: sticky;
+        top: 0;
+    }
+
+    .topnav.responsive .nav-links {
+        display: flex;
+    }
+
+
+    .login {
+        background-image: url(fundoh.png);
+        background-size: 402px 525px;
+        width: 402px;
+        height: 525px;
+    }
+
+    .login input {
+        width: 280px;
+        height: 45px;
+    }
+
+    .login .botoes {
+        /* width: 109px;
+        height: 45px; */
+        font-size: 10px;
+        gap: 62px;
+    }
+
+    .login .botoes button {
+        width: 110px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 27px;
+    }
+
+    .footer {
+        height: 82px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer img {
+        width: 64px;
+        height: auto;
+    }
+
+}
